@@ -1,0 +1,23 @@
+{
+  "name": "topics",
+  "version": "1.0.0",
+  "description": "Send yourself a daily interesting topic to research via email!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests needed for this project\""
+  },
+  "keywords": [
+    "daily",
+    "topic",
+    "email",
+    "automation",
+    "github-actions"
+  ],
+  "author": "You",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "resend": "^3.2.0"
+  }
+}
