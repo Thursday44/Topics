@@ -27,7 +27,7 @@ try {
 
   // 4. Construct and dispatch the email payload via Resend
   const { data, error } = await resend.emails.send({
-    from: 'Daily Insight <onboarding@resend.dev>',
+    from: 'Daily Insight <noreply@topics.nessahagoz.com>',
     to: [process.env.TO_EMAIL],
     subject: `Daily Insight: Day ${dayOfYear}`,
     text: selectedTopic,
