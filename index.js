@@ -27,18 +27,18 @@ try {
 
   // 4. Construct and dispatch the email payload via Resend
   const { data, error } = await resend.emails.send({
-    from: 'Daily Insight <noreply@topics.nessahagoz.com>',
+    from: 'Daily Topic <noreply@topics.nessahagoz.com>',
     to: [process.env.TO_EMAIL],
-    subject: `Daily Insight: Day ${dayOfYear}`,
+    subject: `Daily Topic: Day ${dayOfYear}`,
     text: selectedTopic,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
-        <h2 style="color: #333; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;">Your Daily Insight</h2>
+        <h2 style="color: #333; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;">Your Daily Topic</h2>
         <p style="font-size: 16px; line-height: 1.6; color: #444; background-color: #fafafa; padding: 15px; border-left: 4px solid #0070f3; border-radius: 4px;">
           "${selectedTopic}"
         </p>
         <footer style="margin-top: 20px; font-size: 12px; color: #888; text-align: center;">
-          Automated by Daily Lesson App • Day ${dayOfYear} of the year
+          Automated by Daily Topic App • Day ${dayOfYear} of the year
         </footer>
       </div>
     `
