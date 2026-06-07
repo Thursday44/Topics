@@ -1,7 +1,7 @@
 name: Daily Topic Email
 on:
   schedule:
-    - cron: '30 7 * * *'
+    - cron: '12 10 * * *'  # 10:12 UTC = 11:12 WAT
   workflow_dispatch:
 jobs:
   send-email:
